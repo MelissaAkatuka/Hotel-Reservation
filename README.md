@@ -1,4 +1,4 @@
-Nearly empty java project with a failing test!
+Java project with unit tests!
 ===
 
 This has been created using gradle; to run the tests, just execute:
@@ -13,6 +13,14 @@ or (on windows machines):
 gradlew.bat test
 ```
 
-**DO NOT change the names of the function (GetCheapestHotel) or of the file and folder it is in, changing it implies in disqualification.** 
+Read if the following error happens:
+"Invalid Gradle JDK configuration found"
 
-**After implementing your solution, it should pass the unit tests available.**
+After cloning this project into your computer, it might be necessary to do the following steps:
+
+- Close the project
+- Delete .gradle and .idea folders
+
+Then, you can re-open it in your IDE (intelliJ is better than netbeans because it builds easier)
+
+This problem occurs because .gradle and .idea must be generated locally on your PC (source: stackoverflow - https://stackoverflow.com/questions/32654016/invalid-jdk-configuration-found-while-importing-a-project-via-gradle)
