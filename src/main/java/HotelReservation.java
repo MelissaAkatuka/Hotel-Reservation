@@ -25,31 +25,16 @@ public class HotelReservation {
         String s2 = splittedText[2];
         String s3 = splittedText[3];
 
-        // Filtering the client.
-        for(int i = 0; i < client.length(); i++){
+        // Filtering the clientType and days of staying.
+        for(int i = 0; i < input.length(); i++){
             // Run through the client array and creates a substring
             // That goes from the first index which is in position [0] until the index before the ":".
-            clientType = client.substring(0, input.indexOf(":"));
-        }
+            clientType = client.substring(0, client.indexOf(":"));
 
-        // Filtering day1.
-        for(int i = 0; i < s1.length(); i++){
-            // Run through the s1 array and creates a substring
+            // Run through the s1, day1, day2 and day3 arrays and creates a substring
             // That goes from the "(" until ")", extracting the word between parentheses.
             day1 = s1.substring((s1.indexOf("(") + 1), (s1.indexOf(")")));
-        }
-
-        // Filtering day2.
-        for(int i = 0; i < s2.length(); i++){
-            // Run through the s2 array and creates a substring
-            // That goes from the "(" until ")", extracting the word between parentheses.
             day2 = s2.substring((s2.indexOf("(") + 1), (s2.indexOf(")")));
-        }
-
-        // Filtering day3.
-        for(int i = 0; i < s3.length(); i++){
-            // Run through the s3 array and creates a substring
-            // That goes from the "(" until ")", extracting the word between parentheses.
             day3 = s3.substring((s3.indexOf("(") + 1), (s3.indexOf(")")));
         }
 
